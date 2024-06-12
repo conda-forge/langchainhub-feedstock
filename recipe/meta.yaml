@@ -1,5 +1,5 @@
 {% set name = "langchainhub" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langchainhub-{{ version }}.tar.gz
-  sha256: f2d0d8bf3abe4ca5e70511d8220bdc9ccea28d5267bcfd0e5ef9c53bd5bd3bad
+  sha256: 5930cda1ceb1428f765b4a9ab1c814d22cccd7e5bc5038ec036085377b33aa85
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - poetry-core
     - pip
   run:
+    - packaging >=24.1.0,<25.0.0
     - python >=3.8.1,<4.0
     - requests >=2.0.0,<3.0.0
     - types-requests >=2.31.0,<3.0.0
