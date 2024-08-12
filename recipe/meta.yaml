@@ -1,5 +1,5 @@
 {% set name = "langchainhub" %}
-{% set version = "0.1.20" %}
+{% set version = "0.1.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langchainhub-{{ version }}.tar.gz
-  sha256: 499fa8958233071f35750987f325005d16241bebd455163955b607c195c37f25
+  sha256: 723383b3964a47dbaea6ad5d0ef728accefbc9d2c07480e800bdec43510a8c10
 
 build:
   noarch: python
